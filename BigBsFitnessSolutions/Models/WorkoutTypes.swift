@@ -66,6 +66,15 @@ func formatPounds(_ value: Double) -> String {
     return String(format: "%.1f", tenths)
 }
 
+func formatPoundsGrouped(_ value: Double) -> String {
+    let tenths = (value * 10).rounded() / 10
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    formatter.maximumFractionDigits = tenths == tenths.rounded() ? 0 : 1
+    formatter.minimumFractionDigits = tenths == tenths.rounded() ? 0 : 1
+    return formatter.string(from: NSNumber(value: tenths)) ?? formatPounds(tenths)
+}
+
 enum WeekCalendar {
     static var calendar: Calendar { Calendar.current }
 

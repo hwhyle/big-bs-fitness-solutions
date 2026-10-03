@@ -33,6 +33,8 @@ A repeating weekly schedule. Each weekday gets a workout type: Push, Pull, Legs,
 
 Plans are stored on device with SwiftData.
 
+The app follows the iPhone appearance and can be pinned to System, Light, or Dark from Profile. Search for a machine and, if nothing matches, tap Add with the name you typed. On today's workout, check off each set; finishing the day celebrates with the weight moved this session (the sum of the weights on completed sets, since reps aren't tracked), the all-time total, and a streak for every week you completed every scheduled training day, with extra fanfare at four weeks in a row. Completions stay on the phone with SwiftData.
+
 ## App overview
 
 | Tab | Description |
