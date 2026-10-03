@@ -19,10 +19,12 @@ struct HomeView: View {
                             .foregroundStyle(.secondary)
                         Text("Big B's Fitness Solutions")
                             .font(.largeTitle.bold())
-                        Text("Build the week. Run it in order.")
+                        Text("Build the week. Check it off.")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }
+
+                    FitnessStatsStrip()
 
                     if let today {
                         todayCard(today)
@@ -53,7 +55,7 @@ struct HomeView: View {
                     .font(.caption.bold())
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
-                    .background(Color.orange.opacity(0.18), in: Capsule())
+                    .background(Color.orange.opacity(0.22), in: Capsule())
                     .foregroundStyle(.orange)
             }
 
@@ -64,22 +66,7 @@ struct HomeView: View {
                 Text("This \(plan.displayName) day does not have machines yet.")
                     .foregroundStyle(.secondary)
             } else {
-                ForEach(Array(plan.sortedEntries.enumerated()), id: \.element.entryID) { index, entry in
-                    HStack(alignment: .firstTextBaseline, spacing: 12) {
-                        Text("\(index + 1)")
-                            .font(.caption.bold())
-                            .frame(width: 22, height: 22)
-                            .background(Color.orange.opacity(0.18), in: Circle())
-                            .foregroundStyle(.orange)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(entry.name)
-                                .font(.headline)
-                            Text(entry.summary)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                }
+                TodayWorkoutSection(plan: plan)
             }
 
             NavigationLink {
