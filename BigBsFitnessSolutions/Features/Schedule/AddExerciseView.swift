@@ -61,10 +61,39 @@ struct AddExerciseView: View {
                     }
                 }
 
+                if !trimmedSearch.isEmpty && !hasExactMatch {
+                    Section {
+                        Button {
+                            addCustom(named: trimmedSearch)
+                        } label: {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label("Add \"\(trimmedSearch)\"", systemImage: "plus.circle.fill")
+                                    .font(.headline)
+                                Text("Not in the list. Save it as your own machine.")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        .tint(.orange)
+                    } header: {
+                        Text(browse.isEmpty ? "No matches" : "Don't see it?")
+                    } footer: {
+                        Text("Saves a custom machine on this phone and tags it for \(plan.displayName).")
+                    }
+                }
+
                 Section {
                     if browse.isEmpty {
-                        Text("No machines match that search.")
-                            .foregroundStyle(.secondary)
+                        if trimmedSearch.isEmpty {
+                            Text("No machines in the catalog yet.")
+                                .foregroundStyle(.secondary)
+                        } else if hasExactMatch {
+                            Text("No machines match that search.")
+                                .foregroundStyle(.secondary)
+                        } else {
+                            Text("Nothing in the catalog matches \(trimmedSearch). Use Add above.")
+                                .foregroundStyle(.secondary)
+                        }
                     } else {
                         ForEach(browse) { template in
                             templateRow(template)
@@ -72,18 +101,9 @@ struct AddExerciseView: View {
                     }
                 } header: {
                     Text(trimmedSearch.isEmpty ? "All \(plan.displayName) machines" : "Search")
-                }
-
-                if !trimmedSearch.isEmpty && !hasExactMatch {
-                    Section {
-                        Button {
-                            addCustom(named: trimmedSearch)
-                        } label: {
-                            Label("Add \"\(trimmedSearch)\"", systemImage: "plus.circle.fill")
-                        }
-                        .tint(.orange)
-                    } footer: {
-                        Text("Saves a custom machine on this phone and tags it for \(plan.displayName).")
+                } footer: {
+                    if trimmedSearch.isEmpty {
+                        Text("Search for a machine. If it isn't listed, you can add it by the name you type.")
                     }
                 }
             }
