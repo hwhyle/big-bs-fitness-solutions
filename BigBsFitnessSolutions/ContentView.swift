@@ -3,6 +3,11 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
+    @AppStorage("appearanceChoice") private var appearanceRaw = AppearanceChoice.system.rawValue
+
+    private var appearance: AppearanceChoice {
+        AppearanceChoice(rawValue: appearanceRaw) ?? .system
+    }
 
     var body: some View {
         TabView {
@@ -22,6 +27,7 @@ struct ContentView: View {
                 }
         }
         .tint(.orange)
+        .preferredColorScheme(appearance.colorScheme)
         .task {
             ExerciseCatalog.seedIfNeeded(in: modelContext)
         }

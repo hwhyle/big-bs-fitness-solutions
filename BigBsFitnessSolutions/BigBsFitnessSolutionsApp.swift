@@ -7,6 +7,6 @@ struct BigBsFitnessSolutionsApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: [ExerciseTemplate.self, WeekdayPlan.self, PlannedExercise.self])
+        .modelContainer(for: [ExerciseTemplate.self, WeekdayPlan.self, PlannedExercise.self, WorkoutSession.self])
     }
 }

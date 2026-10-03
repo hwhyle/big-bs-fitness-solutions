@@ -5,7 +5,7 @@ import SwiftUI
 let previewContainer: ModelContainer = {
     let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(
-        for: ExerciseTemplate.self, WeekdayPlan.self, PlannedExercise.self,
+        for: ExerciseTemplate.self, WeekdayPlan.self, PlannedExercise.self, WorkoutSession.self,
         configurations: configuration
     )
     ExerciseCatalog.seedIfNeeded(in: container.mainContext)
