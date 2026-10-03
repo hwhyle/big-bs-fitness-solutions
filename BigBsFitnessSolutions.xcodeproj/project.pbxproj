@@ -10,10 +10,18 @@
 		1C96792CF6E04818AC8CBE44 /* BigBsFitnessSolutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C553D66787049AE84B1796C /* BigBsFitnessSolutionsApp.swift */; };
 		E2C86A43767A4C76B6946FC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E4BF4C602448D990582B0 /* ContentView.swift */; };
 		ABDD3C01D2CD4B2F8A84CD3D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E9EF2C21D4E389535FD34 /* HomeView.swift */; };
-		88D811FFAC41474E89F3F934 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DFAFE6AE64A5786AB479E /* WorkoutsView.swift */; };
-		414711CEC0544C97B312727D /* ProgressViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7C918172E432CA8664B86 /* ProgressViewScreen.swift */; };
 		80F0C10CFFD94C5482AE5717 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5ECEB68C34C53B40478AC /* ProfileView.swift */; };
-		B3371556CF6F4B10BB865E72 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B17B9B6A746F6BDC6D660 /* Workout.swift */; };
+		B7E3C91B04D64F18A2B6C0D2 /* WorkoutTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C91B04D64F18A2B6C0D1 /* WorkoutTypes.swift */; };
+		D7E3C91B04D64F18A2B6C0D4 /* ExerciseTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3C91B04D64F18A2B6C0D3 /* ExerciseTemplate.swift */; };
+		F7E3C91B04D64F18A2B6C0D6 /* WeekdayPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3C91B04D64F18A2B6C0D5 /* WeekdayPlan.swift */; };
+		B8E3C91B04D64F18A2B6C0D8 /* PlannedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3C91B04D64F18A2B6C0D7 /* PlannedExercise.swift */; };
+		D8E3C91B04D64F18A2B6C0DA /* ExerciseCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3C91B04D64F18A2B6C0D9 /* ExerciseCatalog.swift */; };
+		F8E3C91B04D64F18A2B6C0DC /* RecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E3C91B04D64F18A2B6C0DB /* RecommendationEngine.swift */; };
+		E0E3C91B04D64F18A2B6C0E7 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C91B04D64F18A2B6C0E6 /* PreviewData.swift */; };
+		B9E3C91B04D64F18A2B6C0DE /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3C91B04D64F18A2B6C0DD /* ScheduleView.swift */; };
+		D9E3C91B04D64F18A2B6C0E0 /* DayPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C91B04D64F18A2B6C0DF /* DayPlanView.swift */; };
+		F9E3C91B04D64F18A2B6C0E2 /* ExerciseEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3C91B04D64F18A2B6C0E1 /* ExerciseEditorView.swift */; };
+		B0E3C91B04D64F18A2B6C0E4 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C91B04D64F18A2B6C0E3 /* AddExerciseView.swift */; };
 		0E3FEBEFD2FE43CDAA77F4CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEEC6038DA54D8CAA9B2A55 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -22,10 +30,18 @@
 		4C553D66787049AE84B1796C /* BigBsFitnessSolutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBsFitnessSolutionsApp.swift; sourceTree = "<group>"; };
 		9A8E4BF4C602448D990582B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD5E9EF2C21D4E389535FD34 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		5D1DFAFE6AE64A5786AB479E /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
-		8CB7C918172E432CA8664B86 /* ProgressViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewScreen.swift; sourceTree = "<group>"; };
 		A4A5ECEB68C34C53B40478AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		3F4B17B9B6A746F6BDC6D660 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		A7E3C91B04D64F18A2B6C0D1 /* WorkoutTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTypes.swift; sourceTree = "<group>"; };
+		C7E3C91B04D64F18A2B6C0D3 /* ExerciseTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTemplate.swift; sourceTree = "<group>"; };
+		E7E3C91B04D64F18A2B6C0D5 /* WeekdayPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayPlan.swift; sourceTree = "<group>"; };
+		A8E3C91B04D64F18A2B6C0D7 /* PlannedExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedExercise.swift; sourceTree = "<group>"; };
+		C8E3C91B04D64F18A2B6C0D9 /* ExerciseCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCatalog.swift; sourceTree = "<group>"; };
+		E8E3C91B04D64F18A2B6C0DB /* RecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngine.swift; sourceTree = "<group>"; };
+		D0E3C91B04D64F18A2B6C0E6 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		A9E3C91B04D64F18A2B6C0DD /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		C9E3C91B04D64F18A2B6C0DF /* DayPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlanView.swift; sourceTree = "<group>"; };
+		E9E3C91B04D64F18A2B6C0E1 /* ExerciseEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseEditorView.swift; sourceTree = "<group>"; };
+		A0E3C91B04D64F18A2B6C0E3 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		BDEEC6038DA54D8CAA9B2A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				20F71A3F7DF94E3DB912C464 /* Home */,
-				7F574CB617804074AFAD4371 /* Workouts */,
-				300A798557EC4026B551EC13 /* Progress */,
+				C0E3C91B04D64F18A2B6C0E5 /* Schedule */,
 				7087840D32574CA9A4172CCB /* Profile */,
 			);
 			path = Features;
@@ -87,20 +102,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		7F574CB617804074AFAD4371 /* Workouts */ = {
+		C0E3C91B04D64F18A2B6C0E5 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				5D1DFAFE6AE64A5786AB479E /* WorkoutsView.swift */,
+				A9E3C91B04D64F18A2B6C0DD /* ScheduleView.swift */,
+				C9E3C91B04D64F18A2B6C0DF /* DayPlanView.swift */,
+				E9E3C91B04D64F18A2B6C0E1 /* ExerciseEditorView.swift */,
+				A0E3C91B04D64F18A2B6C0E3 /* AddExerciseView.swift */,
 			);
-			path = Workouts;
-			sourceTree = "<group>";
-		};
-		300A798557EC4026B551EC13 /* Progress */ = {
-			isa = PBXGroup;
-			children = (
-				8CB7C918172E432CA8664B86 /* ProgressViewScreen.swift */,
-			);
-			path = Progress;
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		7087840D32574CA9A4172CCB /* Profile */ = {
@@ -114,7 +124,13 @@
 		67C17E1E57E843F5BD35D91D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3F4B17B9B6A746F6BDC6D660 /* Workout.swift */,
+				A7E3C91B04D64F18A2B6C0D1 /* WorkoutTypes.swift */,
+				C7E3C91B04D64F18A2B6C0D3 /* ExerciseTemplate.swift */,
+				E7E3C91B04D64F18A2B6C0D5 /* WeekdayPlan.swift */,
+				A8E3C91B04D64F18A2B6C0D7 /* PlannedExercise.swift */,
+				C8E3C91B04D64F18A2B6C0D9 /* ExerciseCatalog.swift */,
+				E8E3C91B04D64F18A2B6C0DB /* RecommendationEngine.swift */,
+				D0E3C91B04D64F18A2B6C0E6 /* PreviewData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,10 +207,18 @@
 				1C96792CF6E04818AC8CBE44 /* BigBsFitnessSolutionsApp.swift in Sources */,
 				E2C86A43767A4C76B6946FC6 /* ContentView.swift in Sources */,
 				ABDD3C01D2CD4B2F8A84CD3D /* HomeView.swift in Sources */,
-				88D811FFAC41474E89F3F934 /* WorkoutsView.swift in Sources */,
-				414711CEC0544C97B312727D /* ProgressViewScreen.swift in Sources */,
 				80F0C10CFFD94C5482AE5717 /* ProfileView.swift in Sources */,
-				B3371556CF6F4B10BB865E72 /* Workout.swift in Sources */,
+				B7E3C91B04D64F18A2B6C0D2 /* WorkoutTypes.swift in Sources */,
+				D7E3C91B04D64F18A2B6C0D4 /* ExerciseTemplate.swift in Sources */,
+				F7E3C91B04D64F18A2B6C0D6 /* WeekdayPlan.swift in Sources */,
+				B8E3C91B04D64F18A2B6C0D8 /* PlannedExercise.swift in Sources */,
+				D8E3C91B04D64F18A2B6C0DA /* ExerciseCatalog.swift in Sources */,
+				F8E3C91B04D64F18A2B6C0DC /* RecommendationEngine.swift in Sources */,
+				E0E3C91B04D64F18A2B6C0E7 /* PreviewData.swift in Sources */,
+				B9E3C91B04D64F18A2B6C0DE /* ScheduleView.swift in Sources */,
+				D9E3C91B04D64F18A2B6C0E0 /* DayPlanView.swift in Sources */,
+				F9E3C91B04D64F18A2B6C0E2 /* ExerciseEditorView.swift in Sources */,
+				B0E3C91B04D64F18A2B6C0E4 /* AddExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
