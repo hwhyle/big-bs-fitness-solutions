@@ -1,6 +1,9 @@
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+
     var body: some View {
         TabView {
             HomeView()
@@ -8,14 +11,9 @@ struct ContentView: View {
                     Label("Home", systemImage: "house.fill")
                 }
 
-            WorkoutsView()
+            ScheduleView()
                 .tabItem {
-                    Label("Workouts", systemImage: "figure.strengthtraining.traditional")
-                }
-
-            ProgressViewScreen()
-                .tabItem {
-                    Label("Progress", systemImage: "chart.line.uptrend.xyaxis")
+                    Label("Schedule", systemImage: "calendar")
                 }
 
             ProfileView()
@@ -24,9 +22,13 @@ struct ContentView: View {
                 }
         }
         .tint(.orange)
+        .task {
+            ExerciseCatalog.seedIfNeeded(in: modelContext)
+        }
     }
 }
 
 #Preview {
     ContentView()
+        .modelContainer(previewContainer)
 }

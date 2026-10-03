@@ -1,6 +1,6 @@
 # Big B's Fitness Solutions
 
-iPhone fitness app built with **SwiftUI**.
+iPhone fitness app built with **SwiftUI** and **SwiftData**.
 
 ## Requirements
 
@@ -22,16 +22,24 @@ open BigBsFitnessSolutions.xcodeproj
 
 If Xcode asks you to select a development team, open the target → **Signing & Capabilities** and pick your Apple ID team.
 
-## App overview
+## What it does
 
-Tab-based starter UI:
+A repeating weekly schedule. Each weekday gets a workout type: Push, Pull, Legs, HIIT, Cardio, Full body, Rest, or Custom. On training days you build the workout in order:
+
+- Recommended machines match the day's type and fill muscle groups you have not added yet.
+- Search the gym catalog, or add a custom machine.
+- Remove or reorder machines.
+- For each machine, log sets as the same weight, a custom weight per set, or a progression (start at 50 lb, 3 sets, +10 lb). The screen shows the resulting loads.
+
+Plans are stored on device with SwiftData.
+
+## App overview
 
 | Tab | Description |
 |-----|-------------|
-| **Home** | Welcome screen and weekly quick stats |
-| **Workouts** | Sample workout list with detail screens |
-| **Progress** | Placeholder weekly activity chart |
-| **Profile** | Placeholder athlete profile card |
+| **Home** | Today's workout type and ordered set plan |
+| **Schedule** | Week calendar, day type, and workout builder |
+| **Profile** | Weekly lineup and on-device storage note |
 
 ## Project layout
 
@@ -41,8 +49,7 @@ BigBsFitnessSolutions/
   ContentView.swift
   Features/
     Home/
-    Workouts/
-    Progress/
+    Schedule/
     Profile/
   Models/
   Assets.xcassets/
